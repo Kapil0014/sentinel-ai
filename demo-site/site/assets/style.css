@@ -1,0 +1,11 @@
+:root { color-scheme: light dark; --bg:#fff; --fg:#111; --muted:#555; --line:#ddd; --accent:#2457d6; }
+@media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#eee; --muted:#aaa; --line:#333; --accent:#7ea2ff; } }
+body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--fg); }
+header { display:flex; gap:2rem; align-items:center; padding:1rem 2rem; border-bottom:1px solid var(--line); }
+.brand { font-weight:700; text-decoration:none; color:var(--fg); }
+nav a { margin-right:1rem; color:var(--accent); }
+main { max-width:48rem; margin:2rem auto; padding:0 1rem; }
+footer { border-top:1px solid var(--line); padding:1rem 2rem; color:var(--muted); }
+form { display:grid; gap:.5rem; max-width:24rem; }
+.products { list-style:none; padding:0; display:grid; gap:1rem; }
+.products li { border:1px solid var(--line); padding:1rem; border-radius:.5rem; }
